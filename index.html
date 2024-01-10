@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <header>
+        <div class="cont-header">
+            <div class="text-header">
+                <h1>Gerador de Senhas seguras!</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="password-section">
+            <div class="cont-passw">
+                <div class="div-passw">
+                    <p>Escolha o comprimento e a composição da sua senha</p>
+                </div>
+                <div class="div-passw">
+                    <label for="passw-lenght">Insira o comprimento da sua senha(maximo 32 caracteres):</label>
+                    <input type="number" required id="passw-lenght">
+                </div>
+                <div class="div-passw">
+                    <label for="passw-checkbox">Composição da senha:</label>
+                    <div id="passw-checbox">
+                        <input type="checkbox" id="lower-case">
+                        <label for="string-letters">Incluir letras minúsculas(ex:abcdef)</label>
+                    </div>
+                    <div id="passw-checbox">
+                        <input type="checkbox" id="upper-case">
+                        <label for="upper-letters">Incluir letras maiúsculas(ex:ABCDEF)</label>
+                    </div>
+                    <div id="passw-checbox">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Incluir números(ex:123456)</label>
+                    </div>
+                    <div id="passw-checbox">
+                        <input type="checkbox" id="special-chars">
+                        <label for="special-chars">Incluir Caracteres especiais(ex:$%&!@)</label>
+                    </div>
+                </div>
+                <div class="div-passw" id="div-button">
+                    <button id="generate-passw">Gerar senha</button>
+                    <button id="new-passw">Nova senha</button>
+                </div>
+                <div class="div-passw" id="div-output" >
+                    <div class="content-output"></div>
+                    <label for="passw-output">Senha gerada:</label>
+                    <input type="text" id="passw-output" readonly>
+                    <button id="copy-passw">COPIAR SENHA</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido por LUCASGRS</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

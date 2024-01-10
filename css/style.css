@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-font:Verdana, sans-serif;
+    --color-white:#ebebeb;
+    --color-black:#03160a;
+    --color-green:#37d80f;
+    --color-blue:#008cffa2;
+}
+body{
+    font-family: var(--primary-font); 
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-header{
+    margin-top: 24px;
+}
+h1{
+    font-size:40px ;
+    color: var(--color-black);
+}
+.password-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-passw{
+    background-color: var(--color-white);
+    width: 75%;
+    height: 100%;
+    margin-top: 80px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.div-passw{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    margin-top: 24px;
+    width: 60%;
+}
+@media(max-width:480px){
+    .cont-passw{
+        width: 85%;
+    }
+    .div-passw{
+        width: 75%;
+    }
+    h1{
+        font-size: 32px;
+        text-align: center;
+    }
+}
+.div-passw p{
+    font-size: 16px;
+}
+.div-passw label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+#passw-lenght {
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+}
+#div-button{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+button{
+    width: 160px;
+    height: 42px;
+    border-style: none;
+    border-radius: 16px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 8px;
+}
+#generate-passw{
+    background-color: var(--color-green);
+}
+#new-passw{
+    background-color: var(--color-blue);
+}
+#div-output{
+    margin-bottom: 24px;
+}
+#passw-output{
+    width: 100%;
+    height: 42px;
+    margin-bottom: 24px;
+    border-radius: 4px 4px 0px 0px;
+}
+#copy-passw{
+    background-color: var(--color-green);
+}
+#copy-passw{
+    margin-top: -26px;
+    width: 100%;
+    border-radius: 0px 0px 4px 4px;
+    margin-left: 0px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 24px;
+}
